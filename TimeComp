@@ -1,0 +1,22 @@
+import java.util.Scanner; //imports the scanner class
+
+public class TimeComp {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in); //creates scanner object
+		
+		System.out.print("Enter number of seconds: "); //reads user input seconds
+		
+		//initializes variables
+		int Seconds = scan.nextInt();
+		int hours = Seconds / 3600; //3600 seconds in an hour
+		int minutes = Seconds % 3600 / 60; // remainder of hours divided by 60 because 60 minutes in an hour
+		int seconds = Seconds % 3600 % 60; //remainder of minutes in seconds
+
+		//prints out the variable names and values calculated
+		System.out.println(Seconds + " seconds is equal to " + hours + " hours, " + minutes + " minutes, and " + seconds + " seconds"); 
+		
+	}
+
+}
+
