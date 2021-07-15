@@ -1,0 +1,21 @@
+import java.util.Scanner; //imports the scanner class
+
+public class AgeGuess {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in); //creates scanner object
+
+		//declares variables
+		String name;
+		int ageGuess;
+		
+		System.out.print("Enter name: "); //reads user input name
+		name = scan.nextLine(); //outputs user input name
+		
+		System.out.print("Enter ageGuess: "); //reads user input ageGuess
+		ageGuess = scan.nextInt(); //outputs user input ageGuess
+		
+		System.out.println("name: " + name + ", ageGuess: " + ageGuess); //prints out the variable names and values
+	}
+
+}
